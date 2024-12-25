@@ -2,9 +2,7 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "/src/firebase/Firebase.js"; // Import Firebase authentication
-import log from "/src/assets/Login.jpg";
-import logo from "/src/assets/Logo.png";
-import "./css/Signup.css"
+import "./css/Signup.css";
 
 function Signup() {
   const [username, setUsername] = useState("");
@@ -75,14 +73,20 @@ function Signup() {
               </div>
               {error && <p className="error">{error}</p>}
               <div className="form-check mt-4">
-                <button type="submit" className="btn btn-login float-right mx-3">
+                <button
+                  type="submit"
+                  className="btn btn-login float-right mx-3"
+                >
                   Sign Up
                 </button>
               </div>
             </form>
             <div className="copy-text">
               <small>
-                Already have an account? <NavLink to="/login" className="text-primary">Login</NavLink>
+                Already have an account?{" "}
+                <NavLink to="/login" className="text-primary">
+                  Login
+                </NavLink>
               </small>
             </div>
           </div>
@@ -96,15 +100,22 @@ function Signup() {
                 <div className="carousel-item active">
                   <img
                     className="d-block img-fluid"
-                    src={log}
+                    src="/src/assets/Login.jpg"
                     alt="First slide"
                   />
                   <div className="carousel-caption d-none d-md-block">
                     <div className="banner-text">
-                      <img src={logo} alt="" className="logo2" />
-                      <h2 className="merriweather-bold">Welcome to Verah Pure Cosmetics</h2>
+                      <img
+                        src="/src/assets/Logo.png"
+                        alt=""
+                        className="logo2"
+                      />
+                      <h2 className="merriweather-bold">
+                        Welcome to Verah Pure Cosmetics
+                      </h2>
                       <p>
-                        Buy Our Products Today And Your Skin Your Desired Radiance
+                        Buy Our Products Today And Your Skin Your Desired
+                        Radiance
                       </p>
                     </div>
                   </div>

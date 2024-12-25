@@ -2,25 +2,23 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "/src/firebase/Firebase.js"; // Import necessary functions
-import log from "/src/assets/Login.jpg";
-import logo from "/src/assets/Logo.png";
-import "./css/Login.css"
+import "./css/Login.css";
 function Login({ onLogin }) {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
-    const navigate = useNavigate();
-  
-    const handleLogin = async (e) => {
-      e.preventDefault();
-      try {
-        await signInWithEmailAndPassword(auth, email, password);
-        onLogin();  // Call onLogin to update the state in App.js
-        navigate("/home");  // Navigate to home page
-      } catch (err) {
-        setError("Invalid login credentials.");
-      }
-    };
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      onLogin(); // Call onLogin to update the state in App.js
+      navigate("/home"); // Navigate to home page
+    } catch (err) {
+      setError("Invalid login credentials.");
+    }
+  };
   return (
     <section className="login-block">
       <div className="log-container container">
@@ -89,12 +87,16 @@ function Login({ onLogin }) {
                 <div className="carousel-item active">
                   <img
                     className="d-block img-fluid"
-                    src={log}
+                    src="/src/assets/Login.jpg"
                     alt="First slide"
                   />
                   <div className="carousel-caption d-none d-md-block">
                     <div className="banner-text">
-                      <img src={logo} className="logo2" alt="" />
+                      <img
+                        src="/src/assets/Logo.png"
+                        className="logo2"
+                        alt="Logo"
+                      />
                       <h2>Welcome Back!</h2>
                       <p>
                         Login to access your personalized dashboard and enjoy
