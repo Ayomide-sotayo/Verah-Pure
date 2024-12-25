@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.home-landing {
+  position: relative;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%; /* Full width */
+  min-height: 100%; /* Full height */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Send video behind other content */
+  transform: translate(-50%, -50%); /* Center the video */
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.color {
+  color: rgb(7, 97, 59);
+}
+
+.h0 {
+  font-size: 12px;
+}
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.button {
+  border: rgb(7, 97, 59) solid 2px;
+  background: transparent;
+  height: 60px;
+  width: 200px;
+  color: rgb(7, 97, 59);
+  transition: ease-in;
+  transition-duration: 0.5s;
+}
+
+.button:hover {
+  background-color: rgb(7, 97, 59);
+  color: white;
+}
+
+.woman-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 40rem;
+}
+
+
+.row {
+  z-index: 1; /* Ensure content is on top */
+}
+
+@media (max-width:767px)
+{
+  .woman-image{
+    display: none;
+  }
+  .button{
+    margin: auto;
+  }
+}

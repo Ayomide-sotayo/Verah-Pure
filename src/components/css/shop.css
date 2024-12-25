@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.color {
+  color: rgb(7, 97, 59);
+}
+
+.Shop {
+  padding: 80px 0 100px 0;
+}
+.Shop .head h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.but {
+  background-color: rgb(7, 97, 59);
+  padding: 15px 20px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.but:hover {
+  background-color: transparent;
+  border: rgb(7, 97, 59) solid 2px;
+  color: rgb(7, 97, 59);
+  transition-duration: .2s;
+}
+
+.mySwiper {
+  padding: 20px 0; /* Add some space */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b8b7b7; /* Navigation arrow color */
+}
+
+.swiper-pagination-bullet {
+  background: #333; /* Bullet color */
+}
+

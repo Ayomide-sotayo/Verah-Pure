@@ -1,0 +1,41 @@
+/* Hero Section */
+.shop-landing {
+    padding: 200px 0 100px 0;
+  background-image: url("/src/assets/test2.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+/* Text Shadow for Better Visibility */
+.shop-landing h1 {
+
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Breadcrumb Styling */
+.shop-landing .breadcrumb {
+  font-size: 20px;
+}
+
+.shop-landing .breadcrumb-item a {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.shop-landing .breadcrumb-item a:hover {
+  color: #ffc107; /* Highlight color on hover */
+}
+
+/* For responsiveness (optional) */
+@media (max-width: 768px) {
+  .shop-landing {
+    height: 300px;
+  }
+
+  .shop-landing h1 {
+    font-size: 2.5rem;
+  }
+}

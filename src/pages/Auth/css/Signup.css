@@ -1,0 +1,195 @@
+.login-block {
+    background: #4CAF50; /* Fallback for older browsers */
+    background: -webkit-linear-gradient(to bottom, #A8E063, #56AB2F); /* For Safari and Chrome */
+    background: linear-gradient(to bottom, #A8E063, #56AB2F); /* Modern browsers */
+    float: left;
+    width: 100%;
+    padding: 75px 0;
+  }
+  
+  .banner-sec {
+    background-size: cover;
+    min-height: 500px;
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+  }
+  
+  .log-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern look */
+    overflow: hidden; /* Ensures child elements don't overflow the container */
+  }
+  
+  .carousel-inner {
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .carousel-caption {
+    text-align: left;
+    left: 5%;
+  }
+  
+  .login-sec1 {
+    padding: 30px 30px;
+    position: relative;
+  }
+  
+  .login-sec1 .copy-text {
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+    color: #6c757d; /* Subtle color for a professional look */
+  }
+  
+  .login-sec1 .copy-text i {
+    color: #FEB58A;
+  }
+  
+  .login-sec1 .copy-text a {
+    color: #E36262;
+  }
+  
+  .login-sec1 h2 {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(7, 97, 59);
+  }
+  
+  .login-sec1 h2:after {
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background: #FEB58A;
+    display: block;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn-login {
+    background: rgb(7, 97, 59);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .btn-login:hover {
+    background: #56AB2F;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .banner-text {
+    width: 70%;
+    position: absolute;
+    bottom: 40px;
+    padding-left: 20px;
+  }
+  
+  .banner-text h2 {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .banner-text h2:after {
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background: #FFF;
+    display: block;
+    margin-top: 20px;
+    border-radius: 3px;
+  }
+  
+  .banner-text p {
+    color: #fff;
+  }
+  
+  .login-form {
+    margin-top: 20px;
+  }
+  
+  .login-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .login-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .login-form input {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .login-form input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+  }
+  
+  .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-check input {
+    margin-right: 10px;
+  }
+  
+  .form-check small {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #6c757d;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .text-primary:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .text-secondary {
+    color: #6c757d;
+  }
+  
+  .text-secondary:hover {
+    color: #495057;
+    text-decoration: 
+    underline;
+  }
+
+  .logo2{
+    width: 130px;
+    margin-bottom: 20px;
+  }
+  
