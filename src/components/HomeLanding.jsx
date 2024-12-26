@@ -1,5 +1,5 @@
 import "../components/css/HomeLanding.css";
-import womanImage from "/src/assets/image/landing.png"; // Replace this path with the image of the woman you want
+
 
 function HomeLanding() {
   return (
@@ -26,7 +26,7 @@ function HomeLanding() {
           <div className="col-12 col-md-6 text-center text-md-end">
             {/* Image of the woman */}
             <img
-              src={womanImage}
+              src="/src/assets/image/landing.png"
               alt="Radiant Beauty Woman"
               className="img-fluid woman-image rounded"
             />

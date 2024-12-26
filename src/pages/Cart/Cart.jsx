@@ -1,4 +1,4 @@
-import { useCart } from "/src/contexts/CartContext.jsx"; // Import the custom hook
+import { useCart } from '../../contexts/CartContext';
 import { NavLink } from "react-router-dom";
 import "../Cart/Cart.css"
 const Cart = () => {
