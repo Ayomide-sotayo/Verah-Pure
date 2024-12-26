@@ -1,4 +1,6 @@
 import "../components/css/HomeLanding.css";
+import Landing from "/src/assets/image/landing.png";
+import vidbg from "/src/assets/videobg.mp4";
 
 
 function HomeLanding() {
@@ -6,7 +8,7 @@ function HomeLanding() {
     <section className="home-landing position-relative" id="Home">
       {/* Video Background */}
       <video autoPlay loop muted className="background-video">
-        <source src="/src/assets/videobg.mp4" type="video/mp4" />
+        <source src={vidbg} type="video/mp4" />
       </video>
 
       {/* Overlay Container */}
@@ -26,7 +28,7 @@ function HomeLanding() {
           <div className="col-12 col-md-6 text-center text-md-end">
             {/* Image of the woman */}
             <img
-              src="/src/assets/image/landing.png"
+              src={Landing}
               alt="Radiant Beauty Woman"
               className="img-fluid woman-image rounded"
             />

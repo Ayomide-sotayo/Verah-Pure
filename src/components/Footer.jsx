@@ -1,5 +1,6 @@
 import "../components/css/Footer.css";
 import { NavLink } from "react-router-dom";
+import logo3 from "/src/assets/logo.png";
 function Footer() {
   return (
     <footer className="site-footer">
@@ -19,7 +20,7 @@ function Footer() {
           </div>
 
           <div className="col-xs-6 col-md-3">
-            <img src="/src/assets/logo.png" alt="" className="bg-light p-3 rounded" />
+            <img src={logo3} alt="" className="bg-light p-3 rounded" />
           </div>
 
           <div className="col-xs-6 col-md-3">
