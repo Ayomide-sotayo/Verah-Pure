@@ -2,8 +2,8 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home/Home";
 import Shop from "./pages/Shop/Shop";
 import Footer from "./components/Footer";
-import Login from "./pages/Auth/Login";
-import Signup from "./pages/Auth/Signup"; // Adjust paths based on your folder structure
+import Login from "./Auth/Login.jsx";
+import Signup from "./Auth/Signup.jsx"; 
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../src/components/css/style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";

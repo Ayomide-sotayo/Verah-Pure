@@ -1,6 +1,6 @@
 import "../components/css/HomeLanding.css";
-import Landing from "/src/assets/image/landing.png";
-import vidbg from "/src/assets/videobg.mp4";
+import Landing from "../assets/image/landing.png";
+import vidbg from "../assets/videobg.mp4";
 
 
 function HomeLanding() {

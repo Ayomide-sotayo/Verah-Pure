@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase/Firebase.js"; // Import necessary functions
+import { auth } from "../firebase/Firebase.js"; // Import necessary functions
 import "./css/Login.css";
-import Sign from "../../assets/Login.jpg";
-import Logo from "../../assets/Logo.png";
+import Sign from "../assets/Login.jpg";
+import Logo from "../assets/Logo.png";
 function Login({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -90,14 +90,14 @@ function Login({ onLogin }) {
                   <img
                     className="d-block img-fluid"
                     src={Sign}
-                    alt={Sign}
+                    alt="login"
                   />
                   <div className="carousel-caption d-none d-md-block">
                     <div className="banner-text">
                       <img
                         src={Logo}
                         className="logo2"
-                        alt={Logo}
+                        alt="Logo"
                       />
                       <h2>Welcome Back!</h2>
                       <p>
