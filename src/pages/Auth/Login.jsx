@@ -3,6 +3,8 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase/Firebase.js"; // Import necessary functions
 import "./css/Login.css";
+import Sign from "/src/assets/Login.jpg";
+import Logo from "/src/assets/Logo.png";
 function Login({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -87,13 +89,13 @@ function Login({ onLogin }) {
                 <div className="carousel-item active">
                   <img
                     className="d-block img-fluid"
-                    src="/src/assets/Login.jpg"
+                    src={Sign}
                     alt="First slide"
                   />
                   <div className="carousel-caption d-none d-md-block">
                     <div className="banner-text">
                       <img
-                        src="/src/assets/Logo.png"
+                        src={Logo}
                         className="logo2"
                         alt="Logo"
                       />
