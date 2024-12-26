@@ -90,14 +90,14 @@ function Login({ onLogin }) {
                   <img
                     className="d-block img-fluid"
                     src={Sign}
-                    alt="First slide"
+                    alt={Sign}
                   />
                   <div className="carousel-caption d-none d-md-block">
                     <div className="banner-text">
                       <img
                         src={Logo}
                         className="logo2"
-                        alt="Logo"
+                        alt={Logo}
                       />
                       <h2>Welcome Back!</h2>
                       <p>
