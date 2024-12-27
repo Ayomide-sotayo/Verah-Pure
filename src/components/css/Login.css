@@ -151,7 +151,10 @@
 
   .logo2{
     width: 130px;
-    margin-bottom: 20px;
+    height: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/src/assets/logo.png");
   }
   
   .banner-sec{
@@ -171,6 +174,9 @@
   
   @media (max-width:767px)
 {
+  .login-block{
+    padding: 75px 20px;
+  }
   .banner-sec{
     display: none;
   }

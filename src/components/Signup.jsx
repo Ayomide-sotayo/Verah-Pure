@@ -3,7 +3,6 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/Firebase.js"; // Import Firebase authentication
 import "./css/Signup.css";
-import Logo from "../assets/Logo.png"
 function Signup() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -92,7 +91,9 @@ function Signup() {
           </div>
           <div className="col-md-8 banner-sec">
             <div className="banner-text">
-              <img src={Logo} alt="" className="logo2" />
+              <div className="logo2 col-md-3">
+
+              </div>
               <h2 className="merriweather-bold">
                 Welcome to Verah Pure Cosmetics
               </h2>

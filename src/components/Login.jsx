@@ -80,7 +80,9 @@ function Login({ onLogin }) {
           {/* Banner Section */}
           <div className="col-md-8 banner-sec p-6">
             <div className="banner-text">
-              <img src={Logo} className="logo2" alt="Logo" />
+              <div className="logo2 col-md-3">
+
+              </div>
               <h2 className="merriweather-bold">Welcome Back!</h2>
               <p>
                 Login to access your personalized dashboard and enjoy seamless

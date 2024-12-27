@@ -5,7 +5,7 @@
     float: left;
     width: 100%;
     padding: 75px 0;
-    height: 75px 0;
+    height: 100vh;
   }
   
   .banner-sec{
@@ -192,11 +192,17 @@
 
   .logo2{
     width: 130px;
-    margin-bottom: 20px;
+    height: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/src/assets/logo.png");
   }
   
   @media (max-width:767px)
   {
+    .login-block{
+      padding: 75px 20px;
+    }
     .banner-sec{
       display: none;
     }
