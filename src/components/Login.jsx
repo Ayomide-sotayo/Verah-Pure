@@ -3,8 +3,8 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/Firebase.js"; // Import necessary functions
 import "./css/Login.css";
-import Sign from "../assets/Login.jpg";
-import Logo from "../assets/Logo.png";
+import Sign from "src\assets\Login.jpg";
+import Logo from "src\assets\Logo.png";
 function Login({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
