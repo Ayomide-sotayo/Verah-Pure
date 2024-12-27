@@ -5,15 +5,17 @@
     float: left;
     width: 100%;
     padding: 75px 0;
+    height: 75px 0;
   }
   
-  .banner-sec {
+  .banner-sec{
+    background-image: url("/src/assets/Login.jpg");
     background-size: cover;
+    background-position: center;
     min-height: 500px;
     border-radius: 0 10px 10px 0;
-    padding: 0;
   }
-  
+
   .log-container {
     background: #fff;
     border-radius: 10px;
@@ -87,9 +89,9 @@
   }
   
   .banner-text {
-    width: 70%;
+    width: 50%;
     position: absolute;
-    bottom: 40px;
+    bottom: 120px;
     padding-left: 20px;
   }
   
@@ -193,3 +195,9 @@
     margin-bottom: 20px;
   }
   
+  @media (max-width:767px)
+  {
+    .banner-sec{
+      display: none;
+    }
+  }

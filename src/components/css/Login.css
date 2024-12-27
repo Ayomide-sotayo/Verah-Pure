@@ -4,15 +4,10 @@
     background: linear-gradient(to bottom, #A8E063, #56AB2F); /* Modern browsers */
     float: left;
     width: 100%;
+    height: 100vh;
     padding: 75px 0;
   }
-  
-  .banner-sec {
-    background-size: cover;
-    min-height: 500px;
-    border-radius: 0 10px 10px 0;
-    padding: 0;
-  }
+ 
   
   .log-container {
     background: #fff;
@@ -21,14 +16,6 @@
     overflow: hidden; /* Ensures child elements don't overflow the container */
   }
   
-  .carousel-inner {
-    border-radius: 0 10px 10px 0;
-  }
-  
-  .carousel-caption {
-    text-align: left;
-    left: 5%;
-  }
   
   .login-sec {
     padding: 65px 30px;
@@ -84,32 +71,6 @@
   .btn-login:hover {
     background: #56AB2F;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .banner-text {
-    width: 70%;
-    position: absolute;
-    bottom: 40px;
-    padding-left: 20px;
-  }
-  
-  .banner-text h2 {
-    color: #fff;
-    font-weight: 600;
-  }
-  
-  .banner-text h2:after {
-    content: " ";
-    width: 100px;
-    height: 5px;
-    background: #FFF;
-    display: block;
-    margin-top: 20px;
-    border-radius: 3px;
-  }
-  
-  .banner-text p {
-    color: #fff;
   }
   
   .login-form {
@@ -193,3 +154,24 @@
     margin-bottom: 20px;
   }
   
+  .banner-sec{
+    background-image: url("/src/assets/Login.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .banner-text {
+    width: 50%;
+    position: absolute;
+    bottom: 120px;
+    padding-left: 20px;
+  }
+  
+  @media (max-width:767px)
+{
+  .banner-sec{
+    display: none;
+  }
+}

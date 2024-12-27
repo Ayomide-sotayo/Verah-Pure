@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/Firebase.js"; // Import necessary functions
 import "./css/Login.css";
+import Logo from "../assets/Logo.png";
 function Login({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -77,35 +78,14 @@ function Login({ onLogin }) {
           </div>
 
           {/* Banner Section */}
-          <div className="col-md-8 banner-sec">
-            <div
-              id="carouselExampleIndicators"
-              className="carousel slide"
-              data-ride="carousel"
-            >
-              <div className="carousel-inner" role="listbox">
-                <div className="carousel-item active">
-                  <img
-                    className="d-block img-fluid"
-                    src="../assets/Login.jpg"
-                    alt="login"
-                  />
-                  <div className="carousel-caption d-none d-md-block">
-                    <div className="banner-text">
-                      <img
-                        src="../assets/Logo.png"
-                        className="logo2"
-                        alt="Logo"
-                      />
-                      <h2>Welcome Back!</h2>
-                      <p>
-                        Login to access your personalized dashboard and enjoy
-                        seamless navigation. Stay connected with our features.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="col-md-8 banner-sec p-6">
+            <div className="banner-text">
+              <img src={Logo} className="logo2" alt="Logo" />
+              <h2 className="merriweather-bold">Welcome Back!</h2>
+              <p>
+                Login to access your personalized dashboard and enjoy seamless
+                navigation. Stay connected with our features.
+              </p>
             </div>
           </div>
         </div>

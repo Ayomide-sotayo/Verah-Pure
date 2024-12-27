@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/Firebase.js"; // Import Firebase authentication
 import "./css/Signup.css";
+import Logo from "../assets/Logo.png"
 function Signup() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -90,36 +91,12 @@ function Signup() {
             </div>
           </div>
           <div className="col-md-8 banner-sec">
-            <div
-              id="carouselExampleIndicators"
-              className="carousel slide"
-              data-ride="carousel"
-            >
-              <div className="carousel-inner" role="listbox">
-                <div className="carousel-item active">
-                  <img
-                    className="d-block img-fluid"
-                    src="../assets/Login.jpg"
-                    alt="First slide"
-                  />
-                  <div className="carousel-caption d-none d-md-block">
-                    <div className="banner-text">
-                      <img
-                        src="../assets/Logo.png"
-                        alt=""
-                        className="logo2"
-                      />
-                      <h2 className="merriweather-bold">
-                        Welcome to Verah Pure Cosmetics
-                      </h2>
-                      <p>
-                        Buy Our Products Today And Your Skin Your Desired
-                        Radiance
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="banner-text">
+              <img src={Logo} alt="" className="logo2" />
+              <h2 className="merriweather-bold">
+                Welcome to Verah Pure Cosmetics
+              </h2>
+              <p>Buy Our Products Today And Your Skin Your Desired Radiance</p>
             </div>
           </div>
         </div>
